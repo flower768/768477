@@ -9,8 +9,8 @@
 <title>2-第2頁</title>
 <meta name="robots" content="all">
 <link type="text/css" rel="stylesheet" href="../style/page.css">
-<script type="text/javascript" src="style/html5.js"></script>
-<script type="text/javascript" src="style/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../style/html5.js"></script>
+<script type="text/javascript" src="../style/jquery-1.9.1.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -793,7 +793,7 @@ function renderAllProducts(products) {
             productsHtml += `
                 <div class="pro_box_search">
                     <div class="pro_txt">
-                        <p>品名︰<a href="${product.url}">${product.title}</a></p>
+                        <p>品名︰<a href="../${product.url}">${product.title}</a></p>
                         <p>編號︰${product.Product_Id}</p>
                     </div>
                 </div>
@@ -815,7 +815,7 @@ function renderAllProducts(products) {
         productsHtml += `
             <div class="pro_box_search">
                 <div class="pro_txt">
-                    <p>品名︰<a href="${product.url}">${product.title}</a></p>
+                    <p>品名︰<a href="../${product.url}">${product.title}</a></p>
                     <p>編號︰${highlightedProductId}</p>
                 </div>
             </div>
