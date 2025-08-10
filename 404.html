@@ -2,25 +2,98 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <title>頁面重定向中...</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 90%;
+        }
+        .loading {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .error-message {
+            color: #e74c3c;
+            margin: 10px 0;
+            display: none;
+        }
+        .home-link {
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
     <script>
         (function() {
             const path = window.location.pathname;
             const productPattern = /\/products\/p(\d+)\.html/;
             const match = path.match(productPattern);
             
-            if (match) {
-                const productNumber = parseInt(match[1]);
-                if (productNumber > 999) {
-                    // 構建新的 URL（將 products 改為 product1000）
-                    const newPath = path.replace('/products/', '/product1000/');
-                    window.location.href = newPath;
-                }
+            function showError() {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('redirect-text').style.display = 'none';
+                document.getElementById('error-message').style.display = 'block';
             }
+
+            function handleRedirect() {
+                if (match) {
+                    const productNumber = parseInt(match[1]);
+                    if (productNumber > 999) {
+                        // 構建新的 URL（將 products 改為 product1000）
+                        const newPath = path.replace('/products/', '/product1000/');
+                        window.location.href = newPath;
+                    } else {
+                        showError();
+                    }
+                } else {
+                    showError();
+                }
+
+                // 如果5秒後還在此頁面，顯示錯誤信息
+                setTimeout(showError, 5000);
+            }
+
+            // 當頁面載入完成後執行重定向
+            window.addEventListener('load', handleRedirect);
         })();
     </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+    <div class="container">
+        <div id="loading" class="loading"></div>
+        <p id="redirect-text">頁面重定向中，請稍候...</p>
+        <div id="error-message" class="error-message">
+            <h2>很抱歉，找不到該頁面</h2>
+            <p>您要找的頁面可能已被移除、名稱已更改或暫時無法使用。</p>
+            <a href="https://flower.768477.com.tw" class="home-link">返回首頁</a>
+        </div>
+    </div>
 </body>
 </html>
