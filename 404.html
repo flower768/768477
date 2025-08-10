@@ -65,7 +65,7 @@
             function handleRedirect() {
                 if (match) {
                     const productNumber = parseInt(match[1]);
-                    if (productNumber > 999) {
+                    if (productNumber > 997) {
                         // 構建新的 URL（將 products 改為 product1000）
                         const newPath = path.replace('/products/', '/product1000/');
                         window.location.href = newPath;
