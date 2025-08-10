@@ -6,14 +6,14 @@
     <script>
         (function() {
             const path = window.location.pathname;
-            const productPattern = /\/mobile\/products\/p(\d+)\.html/;
+            const productPattern = /\/products\/p(\d+)\.html/;
             const match = path.match(productPattern);
             
             if (match) {
                 const productNumber = parseInt(match[1]);
                 if (productNumber > 999) {
-                    // 構建新的 URL（將 products 改為 product）
-                    const newPath = path.replace('/products/', '/product/');
+                    // 構建新的 URL（將 products 改為 product1000）
+                    const newPath = path.replace('/products/', '/product1000/');
                     window.location.href = newPath;
                 }
             }
