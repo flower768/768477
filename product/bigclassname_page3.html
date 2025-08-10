@@ -1,0 +1,1085 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="斗六花店，台西花店，中部花店外送，水林花店，四湖花店，斗南花店，名間花店，集集花店，鹿谷花店，埔里花店推薦雅楓花藝">
+<meta name="keywords" content="線西花店，芬園花店，伸港花店，雅楓花店，花壇花店，弔唁喪事花籃">
+<title>3-第3頁</title>
+<meta name="robots" content="all">
+<link type="text/css" rel="stylesheet" href="../style/page.css">
+<script type="text/javascript" src="../style/html5.js"></script>
+<script type="text/javascript" src="../style/jquery-1.9.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:title" content="員林花店雅楓花藝設計花店送花-用心傳遞情感，彰化員林市最佳花藝選擇">
+<meta property="og:description" content="斗六花店，台西花店，中部花店外送，水林花店，四湖花店，斗南花店，名間花店，集集花店，鹿谷花店，埔里花店推薦雅楓花藝">
+<meta property="og:image" content="https://flower.768477.com.tw/img/default-preview.jpg">
+<meta property="og:url" content="https://flower.768477.com.tw/product/productlist.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="雅楓花藝設計">
+</head>
+<body>
+</body>
+</html>
+
+
+<style>
+/* ---- 搜尋框和按鈕樣式美化 ---- */
+.search-container {
+    text-align: center;
+    padding: 30px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+#searchInput {
+    padding: 6px 15px !important;
+    font-size: 16px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1) !important;
+    transition: border-color 0.3s, box-shadow 0.3s !important;
+}
+#searchInput:focus {
+    border-color: #007bff !important;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5) !important;
+    outline: none !important;
+}
+.search-button {
+    width: 110px !important;
+    padding: 10px 15px !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    background-color: #007bff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s, transform 0.2s !important;
+    margin-left: 10px !important;
+}
+.search-button:hover {
+    background-color: #0056b3 !important;
+    transform: translateY(-1px) !important;
+}
+.search-button:active {
+    background-color: #004494 !important;
+    transform: translateY(0) !important;
+}
+
+/* ---- 產品列表樣式 (預設樣式) ---- */
+.list_pro {
+    display: grid !important;
+    gap: 20px !important;
+}
+.pro_box {
+    text-align: center !important;
+    transition: transform 0.2s ease-in-out !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+.pro_box:hover {
+    transform: translateY(-5px) !important;
+}
+.pro_img {
+    text-align: center !important;
+    padding: 0 !important;
+}
+.pro_box .pro_img img {
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border: none !important;
+}
+.pro_txt {
+    padding: 15px !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+    border: none !important;
+}
+
+/* 搜尋結果標題樣式 */
+#searchResultsContainer h3 {
+    text-align: center !important;
+    font-size: 1.5em !important;
+    margin-bottom: 20px !important;
+    color: #333 !important;
+}
+
+/* 搜尋結果-關鍵字樣式 */
+
+.highlight {
+    background-color: #8A2BE2; /* 紫色 */
+    color: white;
+    padding: 2px 4px; /* 增加一些內邊距，讓背景更好看 */
+    border-radius: 4px;
+}
+
+
+
+/* ---- 分頁選單樣式 (修正版) ---- */
+.pagination-wrapper {
+    text-align: center !important; /* 確保整個區塊居中 */
+    padding: 20px 0 !important;
+}
+.pagelist {
+    display: inline-block !important; /* 使分頁連結在一個區塊內，方便居中 */
+    white-space: nowrap !important; /* 防止項目換行 */
+}
+.pagelist a, .pagelist span {
+    display: inline-block !important;
+    padding: 5px 12px !important;
+    margin: 0 2px !important;
+    border: 1px solid #ddd !important;
+    text-decoration: none !important;
+}
+.pagelist a {
+    color: #666 !important;
+}
+.pagelist a:hover {
+    background: #f5f5f5 !important;
+}
+.pagelist span.current {
+    background: #337ab7 !important;
+    color: white !important;
+    border: 1px solid #337ab7 !important;
+}
+.pagelist span.info {
+    margin-left: 10px !important;
+    color: #666 !important;
+}
+
+/* ---- 響應式設計 (大螢幕與小螢幕) ---- */
+/* 大於 544px 時的樣式 */
+@media (min-width: 545px) {
+    #searchInput {
+        width: 300px !important;
+    }
+    .container .box_main .list_box {
+        margin-left: -15px !important;
+    }
+    .list_pro {
+        display: block !important;
+    }
+    .pro_box {
+        max-width: 800px !important;
+        margin: 0 auto 20px auto !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .pro_box .pro_img {
+        padding: 0 !important;
+    }
+    .pro_box .pro_img img {
+        max-width: 768px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    .pro_txt {
+        text-align: left !important;
+        border: none !important;
+        padding-top: 15px !important;
+    }
+    .pro_box_search {
+        border: 1px solid #ddd !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        max-width: 800px !important;
+        margin: 0 auto 20px auto !important;
+    }
+    .pro_box_search .pro_txt {
+        border-top: 1px solid #ddd !important;
+        padding-top: 15px !important;
+    }
+}
+/* 小於等於 544px 時的樣式 */
+@media (max-width: 544px) {
+    #searchInput {
+        width: 120px !important;
+    }
+    .list_pro {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+        margin: 0 6px !important;
+    }
+    .container .box_main .list_box {
+        margin-left: 0 !important;
+    }
+    .pro_box .pro_img img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .pro_box_search {
+        padding: 0 !important;
+        margin: 5px 20px !important;
+        border: 1px solid #ddd !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        background-color: #fff !important;
+    }
+    .pro_img {
+        padding: 10px 10px 0 10px !important;
+    }
+    .pro_txt {
+        padding: 10px !important;
+        text-align: left !important;
+        margin-top: 0 !important;
+        border-top: none !important;
+        position: static !important;
+        z-index: auto !important;
+    }
+}
+</style>
+
+
+
+
+
+
+<body>
+<div class="container">
+<div class="box_main">
+<div class="content_box"> 
+<li><a href=../><img src=https://flower.768477.com.tw/img/head.jpg width=100% height=auto alt=雅楓花藝設計></a></li>
+
+
+<div class="title">
+<p class="tit_name"><strong>現在位置～所有產品列表︰</strong>
+</div>
+
+
+
+
+
+<!--產品編號搜尋-->
+
+
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="輸入產品編號">
+    <button onclick="searchProduct()" class="search-button">編 號 搜 尋</button>
+</div>
+
+<div id="searchResultsContainer"></div>
+
+<div id="originalProductListContainer"></div>
+
+
+
+
+
+
+
+<style>
+.pagelist {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagelist a {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    color: #666;
+    text-decoration: none;
+}
+
+.pagelist a:hover {
+    background: #f5f5f5;
+}
+
+.pagelist span.current {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 0 2px;
+    background: #337ab7;
+    color: white;
+    border: 1px solid #337ab7;
+}
+
+.pagelist span.info {
+    margin-left: 10px;
+    color: #666;
+}
+</style>
+
+
+
+<div class="list_box">
+  <div class="list_pro">
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p72.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/201722315019111.jpg" alt="花意~盎然_2020年玫瑰百合花束員林雅楓花藝設計">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="台中市西區花店_台中市北區花店_桔梗花束台中市中區花店" href="/products/p72.html">花意~盎然_2020年玫瑰百合花束員林雅楓花藝設計</a><br>
+     
+
+編號︰CB112<br>
+        類別︰傳情花束<br>
+        規格：一束<br>
+        <b>訂價：2750元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='台中市西區花店_台中市北區花店_桔梗花束台中市中區花店'><span style='padding:5px'><b><font color='#800000'>特價：2500元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p385.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2021112220415998.jpg" alt="七層圓形_四方型客製化追思罐頭塔，飲料_洋酒_啤酒_平安米_高粱..等，都可指定製作">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="斗南花店_田中花店公祭罐頭籃_中寮花店" href="/products/p385.html">七層圓形_四方型客製化追思罐頭塔，飲料_洋酒_啤酒_平安米_高粱..等，都可指定製作</a><br>
+     
+
+編號︰QB012<br>
+        類別︰追思弔慰<br>
+        規格：一對(2座)<br>
+        <b>訂價：13300元</b>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p386.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/20176820455358.jpg" alt="彰化殯儀館喪禮追思七層紅酒禮盒斗六罐頭籃外送_鹿港鎮花店喪事罐頭籃">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="口湖花店送喪家罐頭籃推薦0935768477雅楓花店" href="/products/p386.html">彰化殯儀館喪禮追思七層紅酒禮盒斗六罐頭籃外送_鹿港鎮花店喪事罐頭籃</a><br>
+     
+
+編號︰QB010<br>
+        類別︰追思弔慰<br>
+        規格：一對(2座)<br>
+        <b>訂價：3950元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='口湖花店送喪家罐頭籃推薦0935768477雅楓花店'><span style='padding:5px'><b><font color='#800000'>特價：3700元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p604.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/201711820517961.jpg" alt="美好祝福!!彰化花店專車送達台中_雲林_彰化_南投開幕花籃">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="社頭鄉花店喜事花籃，大城鄉花店" href="/products/p604.html">美好祝福!!彰化花店專車送達台中_雲林_彰化_南投開幕花籃</a><br>
+     
+
+編號︰EB140<br>
+        類別︰藝術花籃(喜慶，追思)<br>
+        規格：一對(2個)<br>
+        <b>訂價：4850元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='社頭鄉花店喜事花籃，大城鄉花店'><span style='padding:5px'><b><font color='#800000'>特價：4600元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p828.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/20231023184711868.jpg" alt="二盆特價8500元白蘭花喪禮送花二林花店">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="鄉下送蘭花推薦0935768477雅楓花店" href="/products/p828.html">二盆特價8500元白蘭花喪禮送花二林花店</a><br>
+     
+
+編號︰GB248<br>
+        類別︰高雅蘭花盆栽<br>
+        規格：一盆<br>
+        <b>訂價：4700元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='鄉下送蘭花推薦0935768477雅楓花店'><span style='padding:5px'><b><font color='#800000'>特價：4500元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p536.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/20171013223118652.jpg" alt="莊重典雅的弔唁追思羅馬花柱_雲林殯儀館外送花禮服務_虎尾花店">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="虎尾花店，埔心花店花柱送喪禮場合推薦雅楓花藝0920768477" href="/products/p536.html">莊重典雅的弔唁追思羅馬花柱_雲林殯儀館外送花禮服務_虎尾花店</a><br>
+     
+
+編號︰JB140<br>
+        類別︰羅馬花柱(喜慶，追思)<br>
+        規格：一對(2柱)<br>
+        <b>訂價：4850元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='虎尾花店，埔心花店花柱送喪禮場合推薦雅楓花藝0920768477'><span style='padding:5px'><b><font color='#800000'>特價：4500元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p85.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/20176121123987.jpg" alt="3對以上一對2300元七層罐頭籃_2024年彰化雅楓花店二十九周年實體店面(1996年創立)南投花店公祭米塔">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="斗六花店殯儀館罐頭籃外送，送飲料塔到喪家斗南花店，南投仁愛花店追思飲料塔" href="/products/p85.html">3對以上一對2300元七層罐頭籃_2024年彰化雅楓花店二十九周年實體店面(1996年創立)南投花店公祭米塔</a><br>
+     
+
+編號︰QB002​<br>
+        類別︰追思弔慰<br>
+        規格：一對(2個)<br>
+        <b>訂價：2800元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='斗六花店殯儀館罐頭籃外送，送飲料塔到喪家斗南花店，南投仁愛花店追思飲料塔'><span style='padding:5px'><b><font color='#800000'>特價：2500元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p368.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/201761195829957.jpg" alt="淡色系白色的祝福喪禮藝術花籃_追思弔慰花籃福興花店_國姓花店喪禮祝福花籃">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="公祭敬輓花籃北港花店_鹿港鎮花店送喪家花籃_南投市立殯儀館公祭花籃南投花店" href="/products/p368.html">淡色系白色的祝福喪禮藝術花籃_追思弔慰花籃福興花店_國姓花店喪禮祝福花籃</a><br>
+     
+
+編號︰EB008<br>
+        類別︰追思弔慰<br>
+        規格：一對(2個)<br>
+        <b>訂價：4790元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='公祭敬輓花籃北港花店_鹿港鎮花店送喪家花籃_南投市立殯儀館公祭花籃南投花店'><span style='padding:5px'><b><font color='#800000'>特價：4500元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p758.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2023413183823238.jpg" alt="悼念花籃_台中西區花店">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="烏日花店追思花籃_殯儀館附近花店送花籃服務" href="/products/p758.html">悼念花籃_台中西區花店</a><br>
+     
+
+編號︰EB329<br>
+        類別︰藝術花籃(喜慶，追思)<br>
+        規格：一對(二個)<br>
+        <b>訂價：7150元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='烏日花店追思花籃_殯儀館附近花店送花籃服務'><span style='padding:5px'><b><font color='#800000'>特價：6700元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p759.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2023413184721220.jpg" alt="喪禮花籃虎尾花店提供外送服務雲德生命會館">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="斗南花店送公祭花籃" href="/products/p759.html">喪禮花籃虎尾花店提供外送服務雲德生命會館</a><br>
+     
+
+編號︰EB330<br>
+        類別︰藝術花籃(喜慶，追思)<br>
+        規格：一對(二個)<br>
+        <b>訂價：6850元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='斗南花店送公祭花籃'><span style='padding:5px'><b><font color='#800000'>特價：6400元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p112.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2017314202525888.jpg" alt="家有喜事花籃(適用新居落成，表演展覽，開幕喬遷，高昇榮陞，結婚文定喜慶任何場合都適合喔)">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="田中花藝鹿港花店展覽圓滿藝術花籃，送預祝表演成功花籃彰化市花店​114年30周年慶1996年創立雅楓花店0935768477" href="/products/p112.html">家有喜事花籃(適用新居落成，表演展覽，開幕喬遷，高昇榮陞，結婚文定喜慶任何場合都適合喔)</a><br>
+     
+
+編號︰EB023<br>
+        類別︰藝術花籃(喜慶，追思)<br>
+        規格：一對(2個)<br>
+        <b>訂價：4200元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='田中花藝鹿港花店展覽圓滿藝術花籃，送預祝表演成功花籃彰化市花店​114年30周年慶1996年創立雅楓花店0935768477'><span style='padding:5px'><b><font color='#800000'>特價：4000元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p571.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2017116195145752.jpg" alt="同表哀悼_大規格羅馬花柱_高質感花禮推薦雲林花店">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="東勢花店送殯儀館花柱，褒忠花店" href="/products/p571.html">同表哀悼_大規格羅馬花柱_高質感花禮推薦雲林花店</a><br>
+     
+
+編號︰JB158<br>
+        類別︰羅馬花柱(喜慶，追思)<br>
+        規格：一對(2柱)<br>
+        <b>訂價：6200元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='東勢花店送殯儀館花柱，褒忠花店'><span style='padding:5px'><b><font color='#800000'>特價：5700元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p693.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/20191223184854204.jpg" alt="亮眼!!特大型蘭花盆栽彰化花店推薦雅楓花藝0935768477">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="蘭花盆栽外送服務大城花店，田尾花店" href="/products/p693.html">亮眼!!特大型蘭花盆栽彰化花店推薦雅楓花藝0935768477</a><br>
+     
+
+編號︰GB161​<br>
+        類別︰高雅蘭花盆栽<br>
+        規格：一座(柱)<br>
+        <b>訂價：6950元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='蘭花盆栽外送服務大城花店，田尾花店'><span style='padding:5px'><b><font color='#800000'>特價：6700元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p21.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/201711321325266.jpg" alt="素雅大型羅馬柱追思告別式適用_溪湖花店">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="麥寮花店_高質感花柱彰化花店雅楓花藝設計" href="/products/p21.html">素雅大型羅馬柱追思告別式適用_溪湖花店</a><br>
+     
+
+編號︰JB106<br>
+        類別︰羅馬花柱(喜慶，追思)<br>
+        規格：一對(2個)<br>
+        <b>訂價：6300元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='麥寮花店_高質感花柱彰化花店雅楓花藝設計'><span style='padding:5px'><b><font color='#800000'>特價：5900元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p777.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/202357183253195.jpg" alt="8株白色蘭花盆栽外送和美鎮立殯儀館彰化縣和美鎮美寮路二段135號">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="社頭鄉朝興第六公墓殯儀館崇義廳外送公祭花籃&告別式罐頭塔&喪事蘭花" href="/products/p777.html">8株白色蘭花盆栽外送和美鎮立殯儀館彰化縣和美鎮美寮路二段135號</a><br>
+     
+
+編號︰GB199<br>
+        類別︰高雅蘭花盆栽<br>
+        規格：一盆<br>
+        <b>訂價：5590元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='社頭鄉朝興第六公墓殯儀館崇義廳外送公祭花籃&告別式罐頭塔&喪事蘭花'><span style='padding:5px'><b><font color='#800000'>特價：5300元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p745.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/202341018539463.jpg" alt="三對以上提供外送，喪事花籃南投花店雅楓花藝">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="彰化市立殯儀館喪事花籃外送048352299彰化市區花店" href="/products/p745.html">三對以上提供外送，喪事花籃南投花店雅楓花藝</a><br>
+     
+
+編號︰EB316<br>
+        類別︰藝術花籃(喜慶，追思)<br>
+        規格：一對(二個)<br>
+        <b>訂價：2450元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='彰化市立殯儀館喪事花籃外送048352299彰化市區花店'><span style='padding:5px'><b><font color='#800000'>特價：2300元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p825.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2023921194231378.jpg" alt="雅楓花藝設計花店送喪事罐頭籃南投殯儀館">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="追思罐頭籃和美花店，雲林罐頭塔廠商四湖花店，水林花店喪家罐頭籃" href="/products/p825.html">雅楓花藝設計花店送喪事罐頭籃南投殯儀館</a><br>
+     
+
+編號︰QB308<br>
+        類別︰罐頭籃(塔，山)<br>
+        規格：一對(二個)<br>
+        <b>訂價：4150元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='追思罐頭籃和美花店，雲林罐頭塔廠商四湖花店，水林花店喪家罐頭籃'><span style='padding:5px'><b><font color='#800000'>特價：3900元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p30.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/2017128213025921.jpg" alt="金錢樹盆栽喬遷開幕祝賀盆栽_南投市花店雅楓花藝">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="斗六市花店盆栽開幕祝賀推薦_斗南鎮花店_虎尾鎮花店外送服務" href="/products/p30.html">金錢樹盆栽喬遷開幕祝賀盆栽_南投市花店雅楓花藝</a><br>
+     
+
+編號︰FB100<br>
+        類別︰綠色開幕盆栽<br>
+        規格：一盆<br>
+        <b>訂價：5000元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='斗六市花店盆栽開幕祝賀推薦_斗南鎮花店_虎尾鎮花店外送服務'><span style='padding:5px'><b><font color='#800000'>特價：4800元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p77.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/201732193157281.jpg" alt="獻給最愛_米奇&米妮金莎花束">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="台中市霧峰區花店_台中市和平區花店_彰化花店" href="/products/p77.html">獻給最愛_米奇&米妮金莎花束</a><br>
+     
+
+編號︰BB052<br>
+        類別︰金莎玩偶花束<br>
+        規格：一束<br>
+        <b>訂價：2300元</b>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+    <div class="pro_box">
+      <div class="pro_img">
+
+
+
+        <a href="/products/p241.html">
+
+
+
+
+          <img src="/uploadfiles/smallpic/201741219153280.jpg" alt="南洋風圓葉蒲葵盆栽&彰化盆栽開幕誌慶員林花店">
+        </a>
+      </div>
+      <div class="pro_txt">
+        
+
+
+        品名︰<a title="大埤花店，土庫花店，祝賀演出成功盆栽北港花店" href="/products/p241.html">南洋風圓葉蒲葵盆栽&彰化盆栽開幕誌慶員林花店</a><br>
+     
+
+編號︰FB116<br>
+        類別︰綠色開幕盆栽<br>
+        規格：一盆<br>
+        <b>訂價：3650元</b><span style='padding:10px'><img border=0 src='/img/arrow_2_pic.gif' style='width:17px;height:17px;align:absmiddle' alt='大埤花店，土庫花店，祝賀演出成功盆栽北港花店'><span style='padding:5px'><b><font color='#800000'>特價：3500元</b></font></span>
+        <br>
+        <img border=0 src='../img/hr.jpg' alt='"&book_name&"'  width='270' height='15'>
+        
+        
+      </div>
+    </div>
+    
+
+<div class="pagination-wrapper">
+    <div class='pagelist'><a href='/product/bigclassname_page2.html'>上一頁</a><a href='/product/bigclassname_page1.html'>1</a><a href='/product/bigclassname_page2.html'>2</a><span class='current'>3</span><a href='/product/bigclassname_page4.html'>4</a><a href='/product/bigclassname_page5.html'>5</a><a href='/product/bigclassname_page6.html'>6</a><a href='/product/bigclassname_page4.html'>下一頁</a><span class='info'>共1088筆/55頁</span></div>
+</div>
+
+</div>
+
+<script>
+let productsData = [];
+const searchInput = document.getElementById('searchInput');
+const searchResultsContainer = document.getElementById('searchResultsContainer');
+const originalProductListContainer = document.getElementById('originalProductListContainer');
+let filteredProducts = [];
+
+// 當頁面載入時，立即執行這個函數來讀取 JSON 檔案
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('products.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('無法載入產品資料檔案。請確認 products.json 檔案是否存在。');
+            }
+            return response.json();
+        })
+        .then(data => {
+            productsData = data;
+            console.log('產品資料已成功載入，共 ' + productsData.length + ' 筆');
+        })
+        .catch(error => {
+            console.error('載入產品資料時發生錯誤:', error);
+            searchResultsContainer.innerHTML = '<p style="color: red; text-align:center;">載入產品資料失敗，搜尋功能暫時無法使用。</p>';
+        });
+
+    // 監聽搜尋輸入框的輸入事件，每次輸入都觸發搜尋
+    searchInput.addEventListener('input', (event) => {
+        searchProduct();
+    });
+});
+
+// 主要搜尋函式
+function searchProduct() {
+    const searchTerm = searchInput.value.trim().toUpperCase();
+    searchResultsContainer.innerHTML = '';
+
+    if (searchTerm === '' || productsData.length === 0) {
+        restoreOriginalList();
+        return;
+    }
+
+    originalProductListContainer.style.display = 'none';
+
+    // 篩選所有符合條件的產品
+    filteredProducts = productsData.filter(product => {
+        // 使用模糊搜尋，只要產品編號包含關鍵字即符合
+        return product.Product_Id.toUpperCase().includes(searchTerm);
+    });
+
+    if (filteredProducts.length > 0) {
+        // 直接渲染所有搜尋結果，不進行分頁
+        renderAllProducts(filteredProducts);
+    } else {
+        searchResultsContainer.innerHTML = '<p style="text-align:center;">沒有找到符合條件的產品。</p>';
+    }
+}
+
+// 渲染所有產品的函式（無分頁）
+function renderAllProducts(products) {
+    const searchTerm = searchInput.value.trim();
+    if (!searchTerm) {
+        // 如果搜尋詞為空，則直接渲染不帶高亮的結果
+        let productsHtml = `<h3>搜尋結果: 共 ${products.length} 筆</h3><div class="list_pro">`;
+        products.forEach(product => {
+            productsHtml += `
+                <div class="pro_box_search">
+                    <div class="pro_txt">
+                        <p>品名︰<a href="../${product.url}">${product.title}</a></p>
+                        <p>編號︰${product.Product_Id}</p>
+                    </div>
+                </div>
+            `;
+        });
+        productsHtml += '</div>';
+        searchResultsContainer.innerHTML = productsHtml;
+        return;
+    }
+
+    // 創建一個正則表達式，用於匹配搜尋詞，並忽略大小寫
+    const regex = new RegExp(searchTerm, 'gi');
+
+    let productsHtml = `<h3>搜尋結果: 共 ${products.length} 筆</h3><div class="list_pro">`;
+    products.forEach(product => {
+        // 使用 replace 方法和正則表達式，將匹配的關鍵字替換成帶有高亮樣式的 span 標籤
+        const highlightedProductId = product.Product_Id.replace(regex, match => `<span class="highlight">${match}</span>`);
+
+        productsHtml += `
+            <div class="pro_box_search">
+                <div class="pro_txt">
+                    <p>品名︰<a href="../${product.url}">${product.title}</a></p>
+                    <p>編號︰${highlightedProductId}</p>
+                </div>
+            </div>
+        `;
+    });
+    productsHtml += '</div>';
+    searchResultsContainer.innerHTML = productsHtml;
+}
+
+// 恢復原始列表的函式
+function restoreOriginalList() {
+    originalProductListContainer.style.display = 'block';
+    searchResultsContainer.innerHTML = '';
+}
+</script>
+
+<div class="body_footer" style="position:fixed;">
+<ul id="doc" config-style-data="">
+<li><a title="雅楓彰化員林花店-雅楓花藝" href="https://flower.768477.com.tw" data-ajax="false">
+<dl>
+<dt><img src="https://flower.768477.com.tw/img/icon_1.png" alt="雅楓花藝"></dt>
+<dd>雅楓花藝</dd>
+</dl>
+</a></li>
+<li><a title="雅楓彰化員林花店-所有類別" href="https://flower.768477.com.tw/product/productlist.html" data-ajax="false">
+<dl>
+<dt><img src="https://flower.768477.com.tw/img/icon_3.png" alt="所有類別"></dt>
+<dd>所有類別</dd>
+</dl>
+</a></li>
+<li><a title="雅楓彰化員林花店-客服電話" href="tel:048352299" data-ajax="false">
+<dl>
+<dt><img src="https://flower.768477.com.tw/img/icon_4.png" alt="客服電話"></dt>
+<dd>客服電話</dd>
+</dl>
+</a></li>
+<li><a title="雅楓彰化員林花店-在線發送簡訊" href="sms:0935768477" data-ajax="false">
+<dl>
+<dt><img src="https://flower.768477.com.tw/img/icon_5.png" alt="在線發送簡訊"></dt>
+<dd>發送簡訊</dd>
+</dl>
+</a></li>
+</ul>
+</div>
+
+
+
+<script type="text/javascript" src="https://flower.768477.com.tw/js/gototop-mb.js"></script>
+</div>
+<div style="display:none;"></div>
