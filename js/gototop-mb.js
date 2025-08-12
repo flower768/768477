@@ -1,7 +1,7 @@
 ﻿
 var scrolltotop={
 	setting: {startline:2, scrollto: 2, scrollduration:800, fadeduration:[1000, 500]},
-        controlHTML: '<img src="../img/top.gif" style="width:50px; box-sizing: border-box; position: fixed; bottom:100px; right:14px; z-index: 100; display: flex; flex-direction: column; align-items: center;"/>',
+        controlHTML: '<img src="/img/top.gif" style="width:50px; box-sizing: border-box; position: fixed; bottom:120px; right:14px; z-index: 100; display: flex; flex-direction: column; align-items: center;"/>',
 	controlattrs: {offsetx:10, offsety:150}, 
 	anchorkeyword: '#top',
 
